@@ -1,0 +1,25 @@
+<form action="procesar_turno.php" method="POST">
+    Nombre Mascota: <input type="text" name="nombre_mascota" required><br>
+    Especie: 
+    <select name="especie" required>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="conejo">Conejo</option>
+        <option value="reptil">Reptil</option>
+        <option value="ave">Ave</option>
+        <option value="otro">Otro</option>
+    </select><br>
+    Edad: <input type="number" name="edad" min="0" max="30" required><br>
+    Peso: <input type="number" name="peso" step="0.1" min="0.1" required><br>
+    Dueño: <input type="text" name="duenio" required><br>
+    Email: <input type="email" name="email" required><br>
+    Servicio:
+    <select name="servicio" required>
+        <option value="3500">Consulta</option>
+        <option value="5000">Vacuna</option>
+        <option value="25000">Cirugía</option>
+    </select><br>
+    Mensaje: <textarea name="mensaje"></textarea><br>
+    <button type="submit">Registrar Turno</button>
+</form>
+
